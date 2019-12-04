@@ -1,5 +1,11 @@
-$(function () {
-    $(".eat-or-uneat").on("click", function (event) {
-        var id = $(this).data("id");
-    })
-})
+var orm = require("../config/orm.js");
+
+var burger = {
+    all: function(cb) {
+        orm.all("burgers", function (res) {
+            cb(res);
+        });
+    }
+}
+
+module.exports = burger;
