@@ -1,0 +1,13 @@
+* {
+    text-align: center;
+}
+
+.burger-zone {
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.create-form {
+    border: 1px black solid;
+    padding: 10px;
+}
